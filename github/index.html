@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="Author" content="Monishree">
+        <title>practice</title>
+    </head>
+<body>
+    <!--abbr-->
+    <abbr title="Mozorilla development network">MDN</abbr>
+    <dfn title="Mozorilla Development Network">MDN</dfn>
+    <p>This is<span style="color: blue;">Header</span></p>
+    <p>This is <bdi style="color: blueviolet;">Header</bdi></p>
+    <p>The reverse of 1-2-3-4-5 is <bdo dir="rtl">1-2-3-4-5</bdo></p>
+    <p>The input is <kbd>Yes</kbd> or <kbd>No</kbd></p>
+    <address>
+        writen by <a href="">Monishre</a>
+    </address>
+    <p>image is <del>Deleted</del></p>
+
+    <!--<p id="para">This is iamge <del></del></p>
+
+    <div id="imgBox">
+        <img src="Thankyou.png" alt="Thank you" width="300" height="300">
+        <button id="button" type="button" onclick="ConfirmDelete()" >Delete image</button>
+    </div>
+    <dialog id="ConfirmDialog">
+        <p>Are you sure?</p>
+        <button id="yes" type="button" onclick="deleteImage()" >Yes</button>
+        <button id="no" type="button" onclick="hideDialog()">No</button>
+    </dialog>-->
+    <!--<script>
+        //start
+        var dialog=document.getElementById("ConfirmDialog");
+        var img=document.getElementById("imgBox");
+        var para=document.getElementById("para");
+        function ConfirmDelete(){
+            if(typeof dialog.showModal==="function"){
+                dialog.showModal();
+            }
+            else{
+                alert("hello");
+            }
+        }
+        function deleteImage(){
+            img.parentNode.removeChild(img);
+            dialog.close();
+            para.textContent="Image is deleted";
+                   
+        }
+        function hideDialog(){
+            dialog.close();
+        }
+    </script>-->
+    <!--meter- this tag actually gives the measurement of the some values like score 6 out of 10 means in meter scale value
+    it shows it can be used in your portifolios and all for your skill level meter and all-->
+    <!--the atributes used here are 
+    low, min,max,high,value,optimum...-->
+    <p>The score is<meter value="6" min="0" max="10">6 out of</meter></p>
+    <p>HTML <meter value="100" min="0" max="100">80%</meter></p>
+    <!--noscript tag will be a tag that displays the message or content in  it only when the browser doent support 
+    the scripting language in the browser-->
+    <!--for example-->
+    <script>
+        document.write("hello world");
+    </script>
+    <noscript>browser doesnt support</noscript><!--when there is a situation where browser will not support script tag or language 
+    then this will be displayed otherwise it wont it was used because old days when there was some browser which doesnt support 
+scripting language for that purpose we use that-->
+<!--object tag we can include all the image audio as well as video too it will take it with attribute data init
+-->
+<!--<object data="Thankyou.png" width="300" height="300"></object>
+<object data="https://www.wikipedia.org/" width="300" height="300"></object>
+<object data="movie.mp4" width="300" height="300" ></object>
+<object data="video.mp4" width="300" height="300" ></object>
+<object data="iphone.mp3" width="300" height="300"></object>-->
+
+<!--output tag is used to show the output of the calculation-->
+<form oninput="result.value=Number(num1.value)+Number(num2.value)">
+    <input type="range" id="num1" value="0">+
+<input type="number" id="num2" value="10">=
+<output name="result" for="num1 num2"></output>
+</form>
+
+
+
+
+    <h2>Task Progress</h2>
+    
+	<p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>
+	<script type="text/javascript">
+		var i = 0;
+		var progressBar = document.getElementById("bar");
+		function countNumbers(){
+			if(i < 100){
+				i = i + 1;
+				progressBar.value = i;
+                progressBar.getElementsByTagName("span")[0].textContent=i;
+			}
+			// Wait for sometime before running this script again
+			setTimeout("countNumbers()", 500);
+		}
+		countNumbers();
+	</script>
+    <ruby>
+        &#28450;<rp><rt>Kan</rt></rp>
+        &#23383;<rp><rt>ji</rt></rp>
+    </ruby>
+    <svg  viewBox="0 0 200 200" width="500" height="350">
+        <circle cx="100" cy="100" r="78" fill="yellow" stroke="black" stroke-width="3px"></circle>
+
+        <g>
+            <circle cx="65" cy="82" r="12"></circle>
+            <circle cx="130" cy="82" r="12"></circle>
+        </g>
+        <path d="M65 115 a1,0.8 0 0,0 65,0" fill="none" stroke="black" stroke-width="5px"></path>
+
+    </svg>
+    <p>The<wbr>XML<wbr> Http Request object is the key to AJAX.</p>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image:linear-gradient(white,grey);
+    max-width: 100%;
+    min-height: 50vh;
+}
+section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    min-height: 50px;
+
+}
+
+form{
+    display:grid;
+    place-content: center;
+    margin: 5rem;
+    padding: 1rem;
+}
+
+input{
+    font-size: 1.2rem;
+    border-radius: 1px;
+
+}
+label{
+    font-size: 1.2rem;
+    font-style: normal;
+}
+input,label{
+    transform: translateY(-1500%);
+}
+.float{
+    animation: 2s show  0.5s forwards normal ease-in-out;
+    transform: rotate(90deg);
+    transform: translate(-100%,-200%);
+
+
+    /*rotate: 50deg;*/
+}
+.stone{
+    transform: translate(-100%,-40%) rotate(-30deg);
+}
+.paper{
+    transform: translate(120%,-50%);
+}
+
+button{
+    font-size: 1.5rem;
+    transform: translateY(-1200%);
+}
+h1{
+    transform: translateY(-900%);
+}
